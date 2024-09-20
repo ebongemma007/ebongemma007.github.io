@@ -1,0 +1,172 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #2980b9;
+  color: white;
+  padding: 100px 0;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+header .btn {
+  background: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header .btn:hover {
+  background: #c0392b;
+}
+
+/* About Section */
+#about {
+  background: #fff;
+  padding: 50px 0;
+}
+
+#about h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+#about p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+  background: #f4f4f4;
+  padding: 50px 0;
+}
+
+#projects h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Skills Section */
+#skills {
+  background: #fff;
+  padding: 50px 0;
+}
+
+#skills h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills-list li {
+  background: #2980b9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+  background: #f4f4f4;
+  padding: 50px 0;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact .btn {
+  background: #2980b9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#contact .btn:hover {
+  background: #1f618d;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
