@@ -5,49 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emma's Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Theme Toggle -->
-  <button id="theme-toggle" class="theme-btn">🌙</button>
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">Dark Mode</button></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Header -->
   <header>
     <div class="container">
-      <h1>Hi, I'm Emma</h1>
-      <p>SDN & Cybersecurity Enthusiast</p>
-      <a href="#projects" class="btn">View My Projects</a>
+      <h1 data-aos="fade-up">Hi, I'm Emma</h1>
+      <p data-aos="fade-up" data-aos-delay="100">SDN & Cybersecurity Enthusiast</p>
+      <a href="#projects" class="btn" data-aos="fade-up" data-aos-delay="200">View My Projects</a>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" data-aos="fade-right">
     <div class="container">
       <h2>About Me</h2>
-      <p>I’m a software engineer specializing in Software-Defined Networking (SDN) and Cybersecurity. I build dynamic, scalable solutions using cutting-edge technologies.</p>
-      <a href="resume.pdf" class="btn" download>Download My Resume</a>
+      <p>I’m a software engineer specializing in SDN and Cybersecurity. I build scalable solutions using advanced networking technologies.</p>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" data-aos="fade-up">
     <div class="container">
       <h2>My Projects</h2>
-      <div class="filter-buttons">
-        <button class="filter-btn" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="sdn">SDN</button>
-        <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
-      </div>
       <div class="project-grid">
-        <div class="project card" data-category="sdn">
+        <div class="project" data-aos="zoom-in" data-aos-delay="100">
           <h3>SDN Real-Time Edge Computing</h3>
-          <p>Integration of SDN and NFV to manage real-time traffic and security using Docker VNFs.</p>
+          <p>Integration of SDN and NFV for dynamic real-time traffic management and security.</p>
           <a href="https://github.com/ebongemma007/SDN-Firewall" target="_blank">View Project</a>
         </div>
-        <div class="project card" data-category="cybersecurity">
+        <div class="project" data-aos="zoom-in" data-aos-delay="200">
           <h3>Cybersecurity Firewall</h3>
-          <p>Docker-based firewall with iptables for real-time threat detection and blocking.</p>
+          <p>Real-time firewall in Docker, using iptables for threat detection and response.</p>
           <a href="https://github.com/ebongemma007" target="_blank">View Project</a>
         </div>
       </div>
@@ -55,32 +59,22 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills">
+  <section id="skills" data-aos="fade-left">
     <div class="container">
       <h2>My Skills</h2>
-      <div class="skill-bar">
-        <span>SDN</span>
-        <div class="progress">
-          <div class="progress-bar" style="width: 90%;"></div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <span>NFV</span>
-        <div class="progress">
-          <div class="progress-bar" style="width: 85%;"></div>
-        </div>
-      </div>
-      <div class="skill-bar">
-        <span>Python</span>
-        <div class="progress">
-          <div class="progress-bar" style="width: 80%;"></div>
-        </div>
-      </div>
+      <ul class="skills-list">
+        <li>SDN</li>
+        <li>NFV</li>
+        <li>Python</li>
+        <li>Docker</li>
+        <li>Cybersecurity</li>
+        <li>Linux</li>
+      </ul>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <div class="container">
       <h2>Contact Me</h2>
       <form id="contact-form">
@@ -99,5 +93,9 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
