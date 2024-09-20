@@ -1,4 +1,4 @@
-/* Resetting defaults */
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,66 +6,96 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  padding: 0 20px;
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-h1, h2 {
-  color: #222;
-  text-align: center;
-  font-weight: 600;
-}
-
-h1 span {
-  color: #2980b9;
+  background: #f4f4f4;
+  color: #333;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-header {
-  background-color: #2980b9;
-  color: white;
-  padding: 80px 0;
+  padding: 20px;
   text-align: center;
 }
 
-header p {
-  margin-top: 10px;
+/* Header */
+header {
+  background: #2980b9;
+  color: white;
+  padding: 100px 0;
 }
 
-.about, .projects, .contact {
-  margin: 40px 0;
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+header .btn {
+  background: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header .btn:hover {
+  background: #c0392b;
+}
+
+/* About Section */
+#about {
+  background: #fff;
+  padding: 50px 0;
+}
+
+#about h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+#about p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+  background: #f4f4f4;
+  padding: 50px 0;
+}
+
+#projects h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
 }
 
 .project-grid {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .project {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background: white;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   flex: 1;
-  min-width: 280px;
-  transition: box-shadow 0.3s ease;
 }
 
-.project:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.project h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 .project a {
-  display: inline-block;
-  margin-top: 10px;
   color: #2980b9;
   text-decoration: none;
 }
@@ -74,61 +104,69 @@ header p {
   text-decoration: underline;
 }
 
-.contact-btn {
-  display: inline-block;
+/* Skills Section */
+#skills {
+  background: #fff;
+  padding: 50px 0;
+}
+
+#skills h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills-list li {
+  background: #2980b9;
+  color: white;
   padding: 10px 20px;
-  background-color: #2980b9;
-  color: white;
-  text-decoration: none;
   border-radius: 5px;
 }
 
-.contact-btn:hover {
-  background-color: #1f6fa5;
+/* Contact Section */
+#contact {
+  background: #f4f4f4;
+  padding: 50px 0;
 }
 
-footer {
-  margin-top: 40px;
-  text-align: center;
+#contact h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
 }
 
-.theme-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.theme-toggle input {
-  display: none;
-}
-
-.theme-toggle label {
+#contact .btn {
+  background: #2980b9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
   cursor: pointer;
-  background-color: #2980b9;
+}
+
+#contact .btn:hover {
+  background: #1f618d;
+}
+
+/* Footer */
+footer {
+  background: #333;
   color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 20px 0;
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #f4f4f4;
-}
-
-body.dark-mode header {
-  background-color: #333;
-}
-
-body.dark-mode .project {
-  background-color: #222;
-  color: #ddd;
-}
-
-body.dark-mode .contact-btn {
-  background-color: #444;
-}
-
-body.dark-mode .contact-btn:hover {
-  background-color: #333;
+footer p {
+  margin: 0;
 }
