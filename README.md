@@ -1,4 +1,4 @@
-# Portfolio - [Your Name]
+# Emmanuel Udofia Ebong - Portfolio
 
 Welcome to my portfolio! I am a Network Engineer and Cybersecurity Enthusiast. This portfolio showcases my projects and skills in **Software-Defined Networking (SDN)**, **Network Function Virtualization (NFV)**, and **cybersecurity**.
 
